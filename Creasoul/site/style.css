@@ -1,0 +1,118 @@
+/*GLOBAL*/
+h1 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 4rem;
+	color: #22a693;
+	text-transform: uppercase;
+	border-bottom: 1px solid #22a693;
+}
+
+h2 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 2.4rem;
+	color: #22a693;
+	text-transform: uppercase;
+	border-bottom: 1px solid #22a693;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+	color: #abb1bc;
+	line-height: 1.5em;
+}
+
+.color {
+	color: #67bdbf;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*HEADER*/
+header {
+	text-align: center;
+}
+
+nav {
+	background-color: #22a693;
+	padding: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 10px 20px;
+	font-size: 1.6rem;
+	color: #ffffff;
+}
+
+/*MAIN*/
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+}
+
+article {
+	display: inline-block;
+	width: 68%;
+}
+
+aside {
+	background-color: #b3d9b0;
+	display: inline-block;
+	width: 28%;
+	vertical-align: top;
+
+	
+}
+
+.illu {
+	width: 100%;
+	height: auto;
+}
+
+/* FOOTER */
+.licence a {
+	color: #67bdbf;
+	text-decoration: underline;
+}
+
+.licence {
+	padding: 10px;
+	color: #abb1bc;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.licence img {
+    width: 50px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+	article, aside {
+		display: block;
+		width: auto;
+	}
+	a {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	article, aside {
+		display: block;
+		width: auto;
+	}
+	a {
+		display: block;
+	}
+	aside {
+		display: none;
+	}
+}
