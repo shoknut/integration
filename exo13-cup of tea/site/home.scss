@@ -1,0 +1,287 @@
+// VARIABLES
+$bandeau : rgba(134, 157, 43, 0.5);
+$h1 : 40px;
+$h2 : 25px;
+$h3 : 20px;
+$p : 16px;
+$titre : "Amaranth";
+$body : "Open Sans";
+$color : white;
+$green: #94af2e;
+$fond: #f2f2f2;
+$brown: #9499a2;
+$bouton: #aa827b;
+$affichageprix: 24px;
+$pageproducth3: 30px;
+$prixAfficher: 40px;
+$choixtea: 0.5;
+
+// GLOBAL
+.container-1 {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+// HEADER
+header {
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bandeau {
+    text-align: center;
+    background-color: $bandeau;
+    font-size: $p;
+    font-family: $body;
+    color: white;
+    padding: 1em;
+}
+
+.promo {
+    width: 10em;
+    height: 10em;
+    float: right;
+    margin-top: -5em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.home {
+    float: left;
+}
+
+.panier {
+    font-size: $p;
+    align-items: baseline;
+    color: $color;
+    font-family: $body;
+    text-align: right;
+    padding-top: 2em;
+}
+
+.btn:not(:disabled):not(.disabled){
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 1px solid white;
+    color: $color;
+}
+
+.nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.nav-item {
+    color: $color !important;
+    text-transform: uppercase;
+    font-family: $body;
+    font-size: $p;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+// MAIN
+main {
+    background-color: #dfdfdf;
+}
+
+.pub {
+    text-align: center;
+}
+
+.pub img {
+    width: 100%;
+}
+
+h1 {
+    color: $green;
+    font-size: $h1;
+    font-family: $titre;
+    padding: 1em;
+}
+
+
+.cde {
+    padding: 1em;
+}
+
+/* SLIDER */
+.slider {
+	padding: 10px;
+	margin-bottom: 5em;
+}
+
+.flexslider {
+	margin: 0;
+	border: 0;
+}
+
+// THES
+.thes {
+    background-color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    color: $green;
+    font-size: $h2;
+    font-family: $titre;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+
+h2::before, h2::after {
+    border-top: 1px solid #dfdfdf;
+    content:"";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%; left: 0; right: 0; bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
+.fond {
+    background: #fff;
+    padding: 0 15px;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.thes p {
+    font-family: $body;
+    font-size: $p;
+    padding-right: 1em;
+}
+
+// PRODUCTS
+
+.button {
+  text-transform: uppercase;
+  color: $color;
+  background-color: $bouton;
+  padding: 1em;
+  border: none;
+}
+
+.produits article {
+  text-align: center;
+  padding: 1em;
+}
+
+.produits h3 {
+  font-size: $h3;
+  font-family: $titre;
+}
+
+.produits {
+  display: inline-flex;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-color: $color;
+}
+
+.produits p span {
+  font-weight: bold;
+  font-size: $affichageprix;
+  font-family: $titre;
+}
+
+// FOOTER
+footer {
+  background-image: url(img/bg.jpg);
+  background-size:cover;
+ }
+
+footer>nav>a {
+  display: inline-flex;
+  flex-direction: column;
+  color: $color;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2em 9em;
+}
+
+footer>nav>a:hover {
+    color: $color;
+    text-decoration: none;
+}
+
+footer>nav {
+  background-color: $bandeau;
+}
+
+.col-4 {
+    color:$color;
+    font-family: $titre;
+    font-size: $h2;
+}
+
+.row-1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 2em;
+}
+
+.nav-link, .nav-link:hover {
+    color: $color;
+}
+
+// RESPONSIVE WEB DESIGN
+@media screen and (max-width:480px) {
+    .container-1 {
+        width: auto;
+        height: auto;
+    }
+    .entete {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hidden {
+        font-size: 0;
+    }
+    .promo {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .panier {
+        margin-left: -12em;
+        margin-bottom: 5em;
+    }
+    .produits {
+        display: block;
+    }
+    .row-1 {
+        display: block;
+    }
+    .col-4 {
+        max-width: 100%;
+        flex: none;
+    }
+}

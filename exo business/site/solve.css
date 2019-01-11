@@ -1,0 +1,55 @@
+@import url(business.css);
+
+.solve:hover {
+	background-color: #FF803E;
+	color: #ffffff;
+}
+
+.solve {
+	background-color: #FF803E;
+	color: #ffffff;
+}
+
+header h1 {
+	background-color: #FFA349;
+}
+
+header p span {
+	color: #FFA349;
+}
+
+.color_1 {
+	color: #FF803E;
+}
+
+.color_2 {
+	color: #F0A400;
+}
+
+.color_3 {
+	color: #D57100;
+}
+
+.article a {
+	color: #FF875B;
+}
+
+.subscribe {
+	background-color: #F0A400;
+}
+
+button {
+	background-color: #FF875B;
+}
+
+.bandeau_3 ul > li > a {
+	color: #FF875B;
+}
+
+.solution > a, .services > a, .press > a {
+	color: #FF875B;
+}
+
+.color_4 {
+	color: #FFA349;
+}

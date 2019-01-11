@@ -1,0 +1,54 @@
+@import url(business.css);
+
+.serve:hover, .serve:focus {
+	background-color: #FF358F;
+	color: #ffffff;
+}
+
+.serve {
+	background-color: #FF358F;
+}
+
+header h1 {
+	background-color: #FF3DED;
+}
+
+header p span {
+	color: #FF3DED;
+}
+
+.color_1 {
+	color: #FF358F;
+}
+
+.color_2 {
+	color: #FF80DF;
+}
+
+.color_3 {
+	color: #FF3E80;
+}
+
+.article a {
+	color: #FF2A9C;
+}
+
+.subscribe {
+	background-color: #FF5396;
+}
+
+button {
+	background-color: #FF7CFD;
+}
+
+.bandeau_3 ul > li > a {
+	color: #FF2A9C;
+}
+
+.solution > a, .services > a, .press > a {
+	color: #FF2A9C;
+}
+
+.color_4 {
+	color: #FF358F;
+}

@@ -1,0 +1,164 @@
+ul {
+	border: 1px solid black;
+	padding-left: 0px;
+}
+
+li {
+	list-style-type: none;
+	padding: 1em;
+}
+
+li:first-child {
+	background-color: blue;
+}
+
+li:nth-child(2) {
+	background-color: red;
+}
+
+li:nth-child(3) {
+	background-color: yellow;
+}
+
+li:nth-child(4) {
+	background-color: green;
+}
+
+li:last-child {
+	background-color: pink;
+}
+
+
+/*test 1 - flex*/
+
+.test1 {
+	display: flex;
+}
+
+/*test2 - direction row reverse*/
+
+.test2 {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+/*test3 - direction column*/
+
+.test3 {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/*test4 - flex-wrap nowrap*/
+
+.test4 {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 200px;
+}
+
+/*test5 - flex-wrap wrap*/
+
+.test5 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 200px;
+}
+
+/*test6 - alignement flex-start*/
+
+.test6 {
+	display: flex;
+	align-items: flex-start;
+	
+}
+
+/*test7 - alignement flex-end*/
+
+.test7 {
+	display: flex;
+	align-items: flex-end;
+	
+}
+
+/*test8 - center*/
+
+.test8 {
+	display: flex;
+	align-items: center;
+	
+}
+
+/*test9 stretch*/
+
+.test9 {
+	display: flex;
+	align-items: stretch;
+	
+}
+
+/*test10 justify-content:flex-start*/
+
+.test10 {
+	display: flex;
+	justify-content:flex-start;
+	
+}
+
+/*test11 justify-content:flex-end*/
+
+.test11 {
+	display: flex;
+	justify-content:flex-end;
+	
+}
+
+/*test12 justify-content:center*/
+
+.test12 {
+	display: flex;
+	justify-content:center;
+	
+}
+
+/*test13 justify-content:space between*/
+
+.test13 {
+	display: flex;
+	justify-content:space-between;
+	
+}
+
+/*test14 justify-content:space around*/
+
+.test14 {
+	display: flex;
+	justify-content:space-around;
+	
+}
+
+/*test15 order*/
+
+.test15 {
+	display: flex;
+}
+
+.test15 li:first-child {
+	order: 3;
+}
+
+.test15 li:nth-child(2) {
+	order: 2;
+}
+
+.test15 li:nth-child(3) {
+	order: 5;
+}
+
+.test15 li:nth-child(4) {
+	order: 1;
+}
+
+.test15 li:last-child {
+	order: 4;
+}

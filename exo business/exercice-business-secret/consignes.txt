@@ -1,0 +1,10 @@
+Largeur de la page:
+960px
+Centré
+Les bandes de couleurs de chaque tranche se prolongent jusqu'au bord de la page.
+
+Fonts:
+- Georgia
+- Myriad Pro
+
+Utiliser les pourcentages si possible aisni que la propriété box-sizing pour faciliter les calculs. 

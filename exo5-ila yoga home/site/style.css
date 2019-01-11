@@ -1,0 +1,157 @@
+/*GLOBAL*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Playfair Display", serif;
+	font-size: 1em;
+}
+
+h1 {
+	font-family: "Kaushan Script", cursive;
+	font-size: 2em;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*HEADER*/
+header {
+	text-align: center;
+	background: url(img/fond.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 30em;
+	background-position: center bottom;
+}
+
+nav {
+	font-family: "Kaushan Script";
+	font-size: 1.5em;
+	background-color: rgba(219,197,239,0.5);
+	padding-bottom: 20px;
+
+}
+
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	color: white;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav ul li a, nav ul li a i {
+	color: white;
+	display: block;
+}
+.main-menu ul li i {
+	display: block;
+	padding-top: 1em;
+}
+header p {
+	color: white;
+	background-color: rgba(229,212,235,0.5);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+}
+
+header h1 {
+	color: white;
+}
+
+
+/*MAIN*/
+.container {
+	margin: 0 auto;
+	width: 1300px;
+}
+
+.intro {
+	padding-top: 60px;
+	padding-right: 50px;
+	padding-bottom: 5em;
+	padding-left: 50px;
+}
+
+.intro .article_1 img {
+	float: left;
+	padding-right: 20px;
+}
+
+.intro .article_2 img {
+	float: right;
+	padding-left: 20px;
+}
+
+.intro article h1 {
+	text-align: center;
+}
+
+hr {
+	width: 100%;
+	margin-top: 2%;
+}
+
+.presentation {
+	background: url(img/background_section.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 5em;
+	padding-top: 2em;
+}
+
+.presentation h1, .presentation p {
+	text-align: center;
+	color: white;
+} 
+
+.presentation img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.presentation article {
+	width: 30%;
+
+}
+
+
+.presentation .prof{
+	margin-left: 31em;
+	margin-top: -37em;
+	padding-right: 50px;
+}
+
+.presentation .tarif{
+	margin-left: 62em;
+	margin-top: -38em;
+	padding-right: 50px;
+}
+
+.googlemap {
+	width: 100%;
+}
+
+
+/*FOOTER*/
+small {
+	background: url(img/background_section.jpg) no-repeat;
+	background-size: 100%
+}
+
+#licence {
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+#licence img {
+    width: 50px;
+}

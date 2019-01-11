@@ -1,0 +1,13 @@
+@import url(style.css);
+[class*="grid-"] {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+
+.grid-2 > * {
+  width: 50%; }
+
+.grid-3 > * {
+  width: 33.33333%; }
+
+/*# sourceMappingURL=mutualise.css.map */

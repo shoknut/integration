@@ -1,0 +1,67 @@
+/*GLOBAL */
+* {
+	box-sizing: border-box;
+	outline: none;
+	font-family: "Arial";
+}
+
+.container {
+	margin: 0 auto;
+	width: 1300px;
+	background-color: #ffffff;
+	border-radius: 1%;
+}
+
+body {
+	background-color: #363636;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+}
+ 
+.prenom .nom .mail .adresse label {
+ 	width: 40%;
+ }
+
+fieldset {
+	border:2px solid #dcdcdc;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius: 8px;
+    background-color: #dcdcdc;
+}
+
+
+fieldset div label {
+	display: inline-block;
+	width: 40%;
+}
+
+fieldset div input[type=text] {
+	display: inline-block;
+	width: 58%;
+}
+
+.adresse {
+	display: inline-block;
+	width: 40%;
+}
+
+.adresse1 {
+	display: inline-block;
+	width: 58%;
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type=number] {
+	width: 48%;
+}
+
+#ville {
+	width: 48%;
+}

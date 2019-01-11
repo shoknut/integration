@@ -1,0 +1,15 @@
+@import url(style.css);
+$color1 : #002631;
+$color2 : #ff8b9a;
+
+[class*="grid-"]{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@for $i from 2 through 3 {
+    .grid-#{$i}>* {
+        width: 100%/$i;
+    }
+}

@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Bodega Sans Black";
+    src: url("fonts/BodegaSans_Black.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$yellow : #ff9d27;
+$nav : 2.5rem;
+$h1 : 4rem;
+$h2 : 3rem;
+$h3 : 2.5rem;
+$color_a : #ffffff;
+$transform : uppercase;
+$bg: #454545;
+
+[class*="grid-"]{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@for $i from 2 through 4 {
+    .grid-#{$i}>* {
+        width:(100% - (($i - 1) * 2%)) / $i;
+    }
+}
+
+* {
+    border-box : box-sizing;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+.clearfix {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+// HEADER
+
+section .entete {
+     background: linear-gradient(120deg, white 50%, #363636 50%);
+     display: flex;
+}
+
+header {
+    background-color: #363636;
+}
+
+header .nav {
+    background: linear-gradient(120deg,white 50%, #363636 50%);
+    height: 0px;
+    width: 50%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: $color_a;
+    text-decoration: none;
+    padding-right: 1em;
+    font-family: "Bodega Sans Black";
+}
+
+// MAIN
+
+main {
+    background: url("img/bg_body.svg");
+    background-color: $bg;
+}
+
+h1, h2, h3 {
+    text-transform: $transform;
+    font-family: "Bodega Sans Black";
+}
+
+h1, h2 {
+    color: white;
+}
+
+h3 {
+    color: $yellow;
+    border-bottom: 2px solid;
+    line-height: 1.5em;
+}
+
+.article p {
+    line-height: 1.5em;
+}
+
+.grid-4 img {
+    width: 15em;
+    margin: auto;
+}
+
+.grid-4 button {
+    width: 90%;
+    padding: 1em;
+    background: $yellow;
+    border: none;
+}
+
+.article {
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+.detail {
+    flex-direction: column;
+}
+
+.texte p, .texte i {
+    color: white;
+}
+
+.texte i {
+    width: 20%;
+}
+
+// FOOTER
+
+footer {
+    background-color: $bg;
+    padding-top: 1em;
+    border-top: 1px solid #363636;
+}
+
+.pied h3, .pied p, .licence {
+    color: white;
+    text-align: center;
+    border-bottom: none;
+}
+
+footer nav {
+    text-align: center;
+    padding: 1em;
+}
+
+footer nav a {
+    text-decoration: underline;
+}
+
+// RESPONSIVE TABLETTE
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .container {
+        width: auto;
+        margin: auto;
+    }
+
+    section .grid-2 {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+	}
+
+    .grid-4 > * {
+        width: 100%;
+    }
+
+    .pied, footer nav, footer .licence {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .flexslider .slide > li {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: auto;
+        margin: auto;
+    }
+
+    .grid-2 {
+        flex-direction: column;
+    }
+
+    .grid-4, section .grid-2 {
+		display: flex;
+		flex-direction: column;
+        align-items: center;
+	}
+
+    .grid-4 > * {
+        width: 100%;
+    }
+
+
+    .pied, footer nav, footer .licence {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .flexslider .slide > li {
+        width: auto;
+        height: auto;
+    }
+
+    .video {
+        width: auto;
+    }
+
+}

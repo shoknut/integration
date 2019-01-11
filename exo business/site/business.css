@@ -1,0 +1,263 @@
+/*GLOBAL*/
+* {
+	box-sizing: border-box;
+}
+
+@import url(about.css);
+@import url(serve.css);
+@import url(solve.css);
+@import url(contact.css);
+
+@font-face {
+	font-family: "Georgia";
+	src: url(fonts/Georgia.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MyriadPro";
+	src: url(fonts/MyriadPro-Regular.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "Georgia";
+	line-height: 1.5em;
+}
+
+
+/*HEADER*/
+
+.bandeau {
+	background: #f7f8f3;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header h1 {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	background-color: #c23e21;
+	color: white;
+	text-transform: uppercase;
+	font-family: "MyriadPro";
+	margin: 0px;
+	padding: 0.5em;
+	border-left: 2px solid white;
+}
+
+header p {
+	display: inline-block;
+	width: 80%;
+	text-align: right;
+	margin: 0px;
+	font-style: italic;
+	font-family: "MyriadPro"
+}
+
+header p span {
+	color: #853c2c;
+}
+
+.bandeau_1 {
+	background-color: #ebe9d8;
+}
+
+nav > a {
+	text-decoration: none;
+	color: black;
+	font-size: 1.4em;
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	padding: 1em;
+	border-left: 2px solid white;
+}
+
+nav a:nth-of-type(5) {
+	border-right: 2px solid white;
+}
+
+.home:hover {
+	background-color: #d3c59d;
+	color: #ffffff;
+}
+.home {
+	background-color: #d3c59d;
+
+}
+
+.home:active a {
+	color: #ffffff;
+}
+
+/*MAIN*/
+
+/*BANDE*/
+
+/*BANDE ENTETE*/
+
+.bande {
+	background-color: #f7f8f3;
+	padding: 1em;
+}
+
+.entete {
+	background-image: url("images/people.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.entete h1 {
+	font-family: "Georgia";
+	width: 40%;
+	line-height: 2em;
+}
+
+.color_1 {
+	color: #ccafa6;
+}
+
+.size_bus {
+	font-size: 2em;
+}
+
+.color_2 {
+	color: #c23e21;
+	font-size: 2em;
+}
+
+/*BANDE ARTICLE*/
+
+.bandeau_2 {
+	background: #ebe9d8;
+	padding: 1em;
+}
+
+.color_3 {
+	color: #a06b58;
+}
+
+.article {
+	display: inline-block;
+	width: 30%;
+	margin: 1%;
+	padding: 1%;
+	vertical-align: top;
+}
+
+.article a {
+	color: #d38870;
+}
+
+.article ul {
+	padding: 0px;
+}
+
+.article ul > li {
+	list-style-type: none;
+}
+
+.subscribe {
+	display: inline-block;
+	float: right;
+	margin-top: -12em;
+	background-color: #c23e21;
+	width: 30%;
+	padding: 1%;
+	margin-right: 2em;
+}
+
+.subscribe a {
+	color: white;
+}
+
+.newsletter {
+	margin: 0px;
+	color: white;
+}
+
+button {
+	background-color: #fc9330;
+	color: white;
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/*BANDE 3*/
+
+.bandeau_3 {
+	background-color: #dbd4bb;
+	padding: 1em;
+}
+
+.bandeau_3 ul {
+	padding: 0px;
+}
+
+.bandeau_3 ul > li {
+	list-style-type: none;
+}
+
+.bandeau_3 ul > li > a {
+	color: #d38870;
+}
+
+.solution, .services, .press {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	padding: 1%;
+	margin: 1%;
+}
+
+.solution > a, .services > a, .press > a {
+	color: #c6bfa9;
+}
+
+/*COPYRIGHT*/
+
+footer {
+	color: #83827b;
+	padding: 1%;
+}
+
+.color_4 {
+	color: #c23e21;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 480px) {
+	nav > a {
+		display: block;
+		width: auto;
+	}
+
+	header h1 {
+		display: block;
+		width: auto;
+	}
+	.container {
+		width: auto;
+		margin: 0 auto;
+	}
+	.article, .solution, .services, .press {
+		display: block;
+		width: auto;
+	}
+	.subscribe {
+		display: block;
+		width: auto;
+		float: none;
+		margin: auto;
+	}
+}

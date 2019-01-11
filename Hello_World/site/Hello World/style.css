@@ -1,0 +1,45 @@
+/*centrer le texte*/
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+	border: solid 5px #ecf0f1;
+}
+
+/*couleur du texte*/
+.rouge {
+	color: red;
+}
+.bleu {
+	color: blue;
+}
+.vert {
+	color: green;
+}
+
+/*Couleur du fond*/
+.fond-rouge {
+	background-color: red;
+}
+.fond-bleu {
+	background-color: blue;
+}
+.fond-vert {
+	background-color: green;
+}
+
+/*Police du texte*/
+.police-a {
+	font-family: arial;
+	color: grey;
+}
+.police-b {
+	font-family: monospace;
+	color: grey;
+}
+.arial {
+	font-family: arial;
+}
+.monospace {
+	font-family: monospace;
+}

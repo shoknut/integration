@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script|Playfair+Display">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Exo bonus - formulaire</title>
+</head>
+<body>
+	
+	<h1>Formulaire de réservation</h1>
+	<div class="container">
+		<form method="post" action="#">
+			<fieldset class="coordonnees">
+				<legend>Mes coordonnées</legend>
+				<div class="nom">
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom" required="required" />
+				</div>
+
+				<hr size="1px">
+
+				<div class="prenom">
+					<label for="prenom">Prénom</label>
+					<input type="text" name="prenom" id="prenom" required="required" />
+				</div>
+
+				<hr size="1px">
+
+				<div class="mail">
+					<label for="mail">Email</label>
+					<input type="text" name="mail" id="mail" required="required" />
+				</div>
+
+				<hr size="1px">
+
+				<div class="adresse">
+				<label for="adresse">Adresse</label>
+				</div>
+
+				<div class="adresse1">
+					<textarea name="adresse" id="adresse" cols="30" rows="10" placeholder="Adresse"></textarea>
+	          		<input id=codepostal name=codepostal type=number placeholder="Code Postale">
+		          	<input id=ville name=ville type=text placeholder="Ville">
+          		</div>
+			</fieldset>
+
+			<fieldset class="voyage">
+				<legend>Mon voyage</legend>
+				<label for="depart">Départ</label>
+				<select name="depart" id="depart">
+					<option value="selection"> </option>
+					<option value="paris">Paris</option>
+					<option value="bordeaux">Bordeaux</option>
+					<option value="marseille">Marseille</option>
+				</select>
+				<input type="date" name="depart" id="depart" required="required" />
+
+				<hr size="1px">
+
+				<label for="arrivee">Arrivée</label>
+				<select name="arrivee" id="arrivee">
+					<option value="selection"> </option>
+					<option value="madrid">Madrid</option>
+					<option value="lisbonne">Lisbonne</option>
+					<option value="rome">Rome</option>
+				</select>
+				<input type="date" name="arrivee" id="arrivee" required="required" />
+			</fieldset>
+
+			<fieldset class="hebergement">
+				<legend>Mon hébergement</legend>
+				<label for="etoile">Classe</label>
+				<input type="radio" name="etoile" id="etoile">
+				★
+				
+				
+				<input type="radio" name="etoile" id="etoile">
+				★★
+
+				
+				<input type="radio" name="etoile" id="etoile">
+				★★★
+				
+				<input type="radio" name="etoile" id="etoile">
+				★★★★
+
+				
+				<input type="radio" name="etoile" id="etoile">
+				★★★★★
+				<hr size="1px">
+				<label for="option">Options</label>
+				<input type="checkbox" name="option" id="option" /> Animaux
+				<input type="checkbox" name="option" id="option" /> Piscine
+				<input type="checkbox" name="option" id="option" /> Télévision
+			</fieldset>
+			
+			<div class="bouton">
+				<button type="submit">Réserver</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

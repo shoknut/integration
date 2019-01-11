@@ -1,0 +1,14 @@
+article {
+	width: 50em;
+	height: 20em;
+	background-color: #fc3;
+	overflow: auto;
+}
+
+h1 {
+	width: 50em;
+	background-color: #fc3;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

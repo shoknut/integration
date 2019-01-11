@@ -1,0 +1,55 @@
+@import url(business.css);
+
+.contact:hover{
+	background-color: #008020;
+	color: #ffffff;
+}
+
+.contact {
+	background-color: #008020;
+	color: #ffffff;
+}
+
+header h1 {
+	background-color: #00B03B;
+}
+
+header p span {
+	color: #00B03B;
+}
+
+.color_1 {
+	color: #26A400;
+}
+
+.color_2 {
+	color: #009015;
+}
+
+.color_3 {
+	color: #009033;
+}
+
+.article a {
+	color: #00B65C;
+}
+
+.subscribe {
+	background-color: #00C212;
+}
+
+button {
+	background-color: #00B65C;
+}
+
+.bandeau_3 ul > li > a {
+	color: #00B65C;
+}
+
+.solution > a, .services > a, .press > a {
+	color: #00B65C;
+}
+
+.color_4 {
+	color: #099700;
+}

@@ -1,0 +1,46 @@
+@import url(style.css);
+[class*="grid-"] {
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+
+.grid-2 > * {
+  width: 50%; }
+
+.grid-3 > * {
+  width: 33.33333%; }
+
+h3 {
+  border-bottom: 1px dotted;
+  width: 20em; }
+
+.pink {
+  color: #ff8b9a; }
+
+.rue {
+  display: flex;
+  justify-content: center;
+  font-style: italic; }
+
+.adresse {
+  font-style: italic; }
+
+article p {
+  width: 85%; }
+
+iframe {
+  width: 100%; }
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+  .grid-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+
+  article h3, article p {
+    width: 100%; }
+
+  .grid-3 > * {
+    width: 100%; } }
+
+/*# sourceMappingURL=contact.css.map */

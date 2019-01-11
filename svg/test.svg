@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="600">
+	<title>Exemple de fichier SVG</title>
+	<desc>Une description...</desc>	
+	<rect x="10" y="10" width="200" height="100" fill="green" />
+	<line x1="20" y1="120" x2="120" y2="220" stroke="red" stroke-width="10" />
+	<circle cx="120" cy="220" r="10" fill="blue" />
+	<text x="300" y="300">Lorem</text>
+</svg>

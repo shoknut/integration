@@ -1,0 +1,60 @@
+@import url(style.css);
+$color1 : #ff8b9a;
+$style : italic;
+
+[class*="grid-"]{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@for $i from 2 through 3 {
+    .grid-#{$i}>* {
+        width: 100%/$i;
+    }
+}
+
+h3 {
+    border-bottom: 1px dotted;
+    width: 20em;
+}
+
+.pink {
+    color: $color1;
+}
+
+.rue {
+    display: flex;
+    justify-content: center;
+    font-style: $style;
+}
+
+.adresse {
+    font-style: $style;
+
+}
+
+article p {
+    width: 85%;
+}
+
+
+iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    .grid-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    article h3, article p {
+        width: 100%;
+    }
+
+    .grid-3>* {
+        width: 100%;
+    }
+
+}

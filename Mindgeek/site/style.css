@@ -1,0 +1,185 @@
+/*GLOBAL*/
+* {
+	box-sizing: border-box;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 3em;
+	color: white;
+	text-align: center;
+}
+
+h1, h2, h3 {
+	font-family: "Candal";
+}
+
+p {
+	font-family: "Open Sans";
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*HEADER*/
+
+nav {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a {
+	text-align: center;
+	color: #002631;
+}
+
+nav a .fas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+
+nav a .fas:before {
+	color: #ff8b9a;
+}
+
+header p {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+}
+
+header .titre {
+	background-image: url(img/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10em;
+}
+
+/*MAIN*/
+
+.bandeau {
+	background-color: #ff8b9a;
+	padding: 0.5em;
+}
+
+input {
+	width: 100%;
+	text-transform: uppercase;
+	background-color: #ff8b9a;
+	padding: 1em;
+	border:none;
+	color: white;
+}
+
+input::placeholder {
+	color: white;
+	opacity: 1;
+}
+
+h2 {
+	text-align: center;
+	padding: 1em;
+	border-top: 1px dotted black;
+	border-left: 1px dotted black;
+	border-right: 1px dotted black;
+}
+
+.partie {
+	display: flex;
+	align-items: center;
+	padding-bottom: 5em;
+}
+
+.article {
+	text-align: center;
+}
+
+h3 {
+	color: #ff8b9a;
+	text-align: center;
+}
+
+.article .fas {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0.5em;
+}
+
+.article p {
+	text-align: initial;
+}
+
+/*FOOTER*/
+
+footer {
+	background: #002631;
+}
+
+footer nav {
+	padding: 0.5em;
+}
+
+footer nav > a {
+	color: white;
+}
+
+.licence a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.licence {
+	padding: 10px;
+	color: white;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.licence img {
+    width: 50px;
+}
+
+/*RESPONSIVE WEB DESIGN*/
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+	nav, .partie {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
